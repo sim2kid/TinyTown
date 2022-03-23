@@ -123,6 +123,70 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: cdf00fc1156b1434491c90e6b692292a, type: 2}
+--- !u!1 &13914014 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3521451165007479389, guid: e8b4b37094147264da49ae596fedeefa, type: 3}
+  m_PrefabInstance: {fileID: 1720230804}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &13914016
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13914014}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e0503f93c00cdde40ba5b30a3b310330, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &285297270 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e8b4b37094147264da49ae596fedeefa, type: 3}
+  m_PrefabInstance: {fileID: 1720230804}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &285297272
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285297270}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.3
+  m_Center: {x: 0, y: 0.3, z: 0}
+--- !u!195 &285297273
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285297270}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &535271072
 GameObject:
   m_ObjectHideFlags: 0
@@ -184,7 +248,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: b428ea0ecda899142b87b3683c5f7b31, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -79365,9 +79429,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5415878835048054686, guid: e8b4b37094147264da49ae596fedeefa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 274d620919a40c14c91d8faf21f99601, type: 2}
+    - target: {fileID: -3214655200389708288, guid: e8b4b37094147264da49ae596fedeefa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 274d620919a40c14c91d8faf21f99601, type: 2}
+    - target: {fileID: -2586023736145449684, guid: e8b4b37094147264da49ae596fedeefa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 274d620919a40c14c91d8faf21f99601, type: 2}
+    - target: {fileID: -1642973731685604078, guid: e8b4b37094147264da49ae596fedeefa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 274d620919a40c14c91d8faf21f99601, type: 2}
+    - target: {fileID: 579889951742042492, guid: e8b4b37094147264da49ae596fedeefa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 274d620919a40c14c91d8faf21f99601, type: 2}
     - target: {fileID: 919132149155446097, guid: e8b4b37094147264da49ae596fedeefa, type: 3}
       propertyPath: m_Name
       value: reindeer
       objectReference: {fileID: 0}
+    - target: {fileID: 2930668742779899880, guid: e8b4b37094147264da49ae596fedeefa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 274d620919a40c14c91d8faf21f99601, type: 2}
+    - target: {fileID: 5892563097324640750, guid: e8b4b37094147264da49ae596fedeefa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 274d620919a40c14c91d8faf21f99601, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8b4b37094147264da49ae596fedeefa, type: 3}
