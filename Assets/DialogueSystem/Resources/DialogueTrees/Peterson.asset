@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d22888574f9e9fa4fa361e996cfea431, type: 3}
+  m_Name: Peterson
+  m_EditorClassIdentifier: 
+  DialogueName: Peterson
+  EntryPointGUID: 5707a068-8d1b-477b-99c2-0aebbc7dd673
+  NodeLinks:
+  - BaseNodeGuid: 5707a068-8d1b-477b-99c2-0aebbc7dd673
+    PortName: Next
+    PortGUID: 4e14cb94-40f6-4a15-af43-df4f26393bc7
+    Condition: 
+    TargetNodeGuid: 766d4f79-4979-4856-996a-8ed6ec13fd1c
+  Nodes:
+  - Guid: a584eb34-dc67-4c39-aba2-478ba4756614
+    Position: {x: 216, y: -241}
+    Type: 16
+    _textKeys:
+    - Code
+    _textValues:
+    - int r = UnityEngine.Random.Range(0,10);
+  - Guid: 766d4f79-4979-4856-996a-8ed6ec13fd1c
+    Position: {x: 281, y: 14}
+    Type: 32
+    _textKeys:
+    - Condition
+    _textValues:
+    - r % 2 == 0

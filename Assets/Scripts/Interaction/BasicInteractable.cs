@@ -19,6 +19,11 @@ namespace Interaction {
         public string InteractText { get => _hoverText; }
         public ClickState ClickState { get; protected set; }
 
+        public void SetHoverText(string newText) 
+        {
+            _hoverText = newText;
+        }
+
         protected virtual void Start()
         {
             ClickState = ClickState.None;

@@ -64,6 +64,14 @@ namespace DialogueSystem.Demo
                 noOptionsNext.SetActive(true);
         }
 
+        private UnityEvent endCallback;
+
+        public void StartConversation(DialogueManager dm, UnityEvent callback) 
+        {
+            endCallback = callback;
+            StartConversation(dm);
+        }
+
         public void StartConversation(DialogueManager newManager = null)
         {
             if (newManager != null)
@@ -80,6 +88,11 @@ namespace DialogueSystem.Demo
 
         public void EndConversation()
         {
+            if (endCallback != null) 
+            {
+                endCallback.Invoke();
+                endCallback = null;
+            }
             dialogueParent.SetActive(false);
             Utility.Pause.Instance.SetPause(false);
             OnConvoEnd.Invoke();

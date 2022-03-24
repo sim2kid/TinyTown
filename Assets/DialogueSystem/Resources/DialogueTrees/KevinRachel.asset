@@ -1,0 +1,164 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d22888574f9e9fa4fa361e996cfea431, type: 3}
+  m_Name: KevinRachel
+  m_EditorClassIdentifier: 
+  DialogueName: KevinRachel
+  EntryPointGUID: 5707a068-8d1b-477b-99c2-0aebbc7dd673
+  NodeLinks:
+  - BaseNodeGuid: 5707a068-8d1b-477b-99c2-0aebbc7dd673
+    PortName: Next
+    PortGUID: e5cc3004-ef02-444f-91b0-7b957362e6a7
+    Condition: 
+    TargetNodeGuid: 766d4f79-4979-4856-996a-8ed6ec13fd1c
+  - BaseNodeGuid: 766d4f79-4979-4856-996a-8ed6ec13fd1c
+    PortName: Pass
+    PortGUID: 3a3b7bc1-626c-498b-b05c-5770f74cc36d
+    Condition: 
+    TargetNodeGuid: 0842207f-d8f4-4920-95b4-ec4a141b2eec
+  - BaseNodeGuid: 766d4f79-4979-4856-996a-8ed6ec13fd1c
+    PortName: Fail
+    PortGUID: 34da00c0-2fcd-4c00-875e-20c3d57c7b15
+    Condition: 
+    TargetNodeGuid: 1c474d6c-5aae-4b9f-91c9-8bea18e38e8d
+  - BaseNodeGuid: 0842207f-d8f4-4920-95b4-ec4a141b2eec
+    PortName: Next
+    PortGUID: 02fdb145-f8c2-481b-9f87-f18b30ca5c26
+    Condition: 
+    TargetNodeGuid: 1597aeb6-1b45-4525-ba48-68754ee39173
+  - BaseNodeGuid: 1597aeb6-1b45-4525-ba48-68754ee39173
+    PortName: Next
+    PortGUID: 9e47ecc2-fc86-45d3-83cd-50bc83f01f84
+    Condition: 
+    TargetNodeGuid: 44d33b07-5ed5-457e-a3d0-70e4857d8736
+  - BaseNodeGuid: 44d33b07-5ed5-457e-a3d0-70e4857d8736
+    PortName: Next
+    PortGUID: 982f5a48-d586-4a16-bc2f-1e5d01d4e473
+    Condition: 
+    TargetNodeGuid: 428cb73f-1345-4e8f-9d21-7d64cf07989c
+  - BaseNodeGuid: 1c474d6c-5aae-4b9f-91c9-8bea18e38e8d
+    PortName: Next
+    PortGUID: d78cbaac-7705-4259-8eae-aab9398db312
+    Condition: 
+    TargetNodeGuid: a3b702a8-2468-4de0-b270-9a5308577066
+  - BaseNodeGuid: a3b702a8-2468-4de0-b270-9a5308577066
+    PortName: Next
+    PortGUID: 0484bb14-e214-418d-8cc9-cde2e4377d7c
+    Condition: 
+    TargetNodeGuid: 49081909-ea91-4f4d-b723-6f2dfde02af8
+  - BaseNodeGuid: 49081909-ea91-4f4d-b723-6f2dfde02af8
+    PortName: Next
+    PortGUID: a2b4e156-90e1-46f5-9ed6-23e0cfde6b49
+    Condition: 
+    TargetNodeGuid: 2e7184ac-312d-426b-96d5-ae087813d307
+  - BaseNodeGuid: 2e7184ac-312d-426b-96d5-ae087813d307
+    PortName: Next
+    PortGUID: 8a11c45f-8b91-4c0b-b357-a46c11b27a90
+    Condition: 
+    TargetNodeGuid: c2aca1eb-2de8-4131-87a1-35362947e2ae
+  Nodes:
+  - Guid: a584eb34-dc67-4c39-aba2-478ba4756614
+    Position: {x: 216, y: -241}
+    Type: 16
+    _textKeys:
+    - Code
+    _textValues:
+    - int r = UnityEngine.Random.Range(0,10);
+  - Guid: 766d4f79-4979-4856-996a-8ed6ec13fd1c
+    Position: {x: 281, y: 14}
+    Type: 32
+    _textKeys:
+    - Condition
+    _textValues:
+    - r % 2 == 0
+  - Guid: 0842207f-d8f4-4920-95b4-ec4a141b2eec
+    Position: {x: 521, y: -231}
+    Type: 8
+    _textKeys:
+    - DialogueText
+    - CharacterName
+    _textValues:
+    - Ya know, it's weird that we're only floating heads and bodies.
+    - Kevin
+  - Guid: 1597aeb6-1b45-4525-ba48-68754ee39173
+    Position: {x: 914, y: -395}
+    Type: 8
+    _textKeys:
+    - DialogueText
+    - CharacterName
+    _textValues:
+    - Yeah, I always thought it's weird. At least I got a blue shirt!
+    - Rachel
+  - Guid: 44d33b07-5ed5-457e-a3d0-70e4857d8736
+    Position: {x: 914, y: -165}
+    Type: 8
+    _textKeys:
+    - DialogueText
+    - CharacterName
+    _textValues:
+    - Dang, I want a blue shirt. My closet is only full of red shirts. It's boring.
+    - Kevin
+  - Guid: 428cb73f-1345-4e8f-9d21-7d64cf07989c
+    Position: {x: 1351, y: -297}
+    Type: 8
+    _textKeys:
+    - DialogueText
+    - CharacterName
+    _textValues:
+    - I'll take you shopping later. We can get some groozy new clothes for you.
+    - Rachel
+  - Guid: 1c474d6c-5aae-4b9f-91c9-8bea18e38e8d
+    Position: {x: 561, y: 31}
+    Type: 8
+    _textKeys:
+    - DialogueText
+    - CharacterName
+    _textValues:
+    - Oh my.. My house is missing.
+    - Rachel
+  - Guid: a3b702a8-2468-4de0-b270-9a5308577066
+    Position: {x: 478, y: 247}
+    Type: 8
+    _textKeys:
+    - DialogueText
+    - CharacterName
+    _textValues:
+    - That's likely because the guy who was supposed to make it got lazy.
+    - Kevin
+  - Guid: 49081909-ea91-4f4d-b723-6f2dfde02af8
+    Position: {x: 914, y: 51}
+    Type: 8
+    _textKeys:
+    - DialogueText
+    - CharacterName
+    _textValues:
+    - But... I had all my stuff in there. I'm just upset, you know?
+    - Rachel
+  - Guid: 2e7184ac-312d-426b-96d5-ae087813d307
+    Position: {x: 938, y: 289}
+    Type: 8
+    _textKeys:
+    - DialogueText
+    - CharacterName
+    _textValues:
+    - I'm sure it'll be back soon enough. Maybe we can go fishing for a bit in the
+      meantime?
+    - Kevin
+  - Guid: c2aca1eb-2de8-4131-87a1-35362947e2ae
+    Position: {x: 1471, y: 93}
+    Type: 8
+    _textKeys:
+    - DialogueText
+    - CharacterName
+    _textValues:
+    - Mehh.. I could but I'm just too bummed
+    - Rachel
