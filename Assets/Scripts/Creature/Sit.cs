@@ -25,7 +25,7 @@ public class Sit : IState
     public void Update()
     {
         float playerDis = Vector3.Distance(creature.transform.position, player.position);
-        if (playerDis > 3f)
+        if (playerDis > 5f)
         {
             NextState = new Follow(creature);
         }

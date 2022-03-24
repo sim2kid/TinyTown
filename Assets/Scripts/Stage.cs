@@ -45,7 +45,12 @@ public class Stage
 
     public static bool ContainsStage(StageType groupOfStages) 
     {
-        return (int)(Instance.CurrentStage & groupOfStages) != 0;
+        return ContainsStage((int)groupOfStages);
+    }
+
+    public static bool ContainsStage(int groupOfStages)
+    {
+        return ((int)Instance.CurrentStage & (int)groupOfStages) != 0;
     }
 }
 

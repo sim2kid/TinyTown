@@ -45,9 +45,9 @@ public class Idle : IState
         // Follow Player On Nearby
         float playerDis = Vector3.Distance(Player.PlayerController.current.transform.position,
             creature.transform.position);
-        if (Stage.ContainsStage(StageType.PetersonQuestPoopEndPetBegin) && playerDis < 5f) 
+        if (Stage.ContainsStage(StageType.ReturnPet) && playerDis < 5f) 
         {
-            Stage.Instance.CurrentStage = StageType.ReturnPet;
+            Stage.Instance.CurrentStage = StageType.PetersonQuestPetEndFindNikoBegin;
             NextState = new Follow(creature);
         }
     }

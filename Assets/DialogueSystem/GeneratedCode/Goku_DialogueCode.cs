@@ -28,6 +28,7 @@ int r = UnityEngine.Random.Range(1,5);
             conditionChecks.Add("Goku_b892ba9d01484bd5afed61ecac851a79",Goku_b892ba9d01484bd5afed61ecac851a79);
             conditionChecks.Add("Goku_1728faab2bce4a0980f2ce7818469fb0",Goku_1728faab2bce4a0980f2ce7818469fb0);
             conditionChecks.Add("Goku_b0a84eb75c41459bb24f75d1dce59311",Goku_b0a84eb75c41459bb24f75d1dce59311);
+            eventFunctions.Add("Goku_4901e5cf087e42c1873f8e9c585bcb2f",Goku_4901e5cf087e42c1873f8e9c585bcb2f);
 
         }
 
@@ -54,6 +55,10 @@ int r = UnityEngine.Random.Range(1,5);
 
 
         // Event Functions //
+        // Event From Node: 4901e5cf-087e-42c1-873f-8e9c585bcb2f //
+        public void Goku_4901e5cf087e42c1873f8e9c585bcb2f() {
+r = UnityEngine.Random.Range(1,5);
+        }
 
     }
 }

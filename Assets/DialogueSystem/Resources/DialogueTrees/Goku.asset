@@ -17,54 +17,59 @@ MonoBehaviour:
   NodeLinks:
   - BaseNodeGuid: eff884da-e6c0-4f36-8ff9-0659a6614d18
     PortName: Next
-    PortGUID: cf66c161-5de4-4f71-bf45-58fde3711b50
+    PortGUID: 1e462cb6-e31a-4d2c-8e98-1f77316e1eaa
     Condition: 
     TargetNodeGuid: 111a60fa-10cc-4f7e-874d-77cad0250957
   - BaseNodeGuid: 111a60fa-10cc-4f7e-874d-77cad0250957
     PortName: Fail
-    PortGUID: 84ef2907-bd52-4f72-b5e4-6cec3304aecb
+    PortGUID: 872bd439-aa1a-4309-96af-f9c5429b1dd8
     Condition: 
     TargetNodeGuid: b0a84eb7-5c41-459b-b24f-75d1dce59311
-  - BaseNodeGuid: b0a84eb7-5c41-459b-b24f-75d1dce59311
-    PortName: Fail
-    PortGUID: e5896ca1-1f8c-4240-95cd-2d993640679d
-    Condition: 
-    TargetNodeGuid: b892ba9d-0148-4bd5-afed-61ecac851a79
-  - BaseNodeGuid: b892ba9d-0148-4bd5-afed-61ecac851a79
-    PortName: Fail
-    PortGUID: cdc06caa-0aba-4242-8585-ec04f56bf06d
-    Condition: 
-    TargetNodeGuid: 1728faab-2bce-4a09-80f2-ce7818469fb0
   - BaseNodeGuid: 111a60fa-10cc-4f7e-874d-77cad0250957
     PortName: Pass
-    PortGUID: 83048fc9-f29d-4c0a-a4fe-f4248818c16e
+    PortGUID: b32431b4-e688-45ce-a488-7a0e37781ab8
     Condition: 
     TargetNodeGuid: 7de64a24-5dfc-4a22-b837-618bf97ddd96
-  - BaseNodeGuid: b0a84eb7-5c41-459b-b24f-75d1dce59311
-    PortName: Pass
-    PortGUID: 946ad098-3014-4ed2-ba94-cf68b735382a
+  - BaseNodeGuid: b892ba9d-0148-4bd5-afed-61ecac851a79
+    PortName: Fail
+    PortGUID: 3d396528-b954-4645-9748-3a93f100242e
     Condition: 
-    TargetNodeGuid: 69a9fee2-e4a7-4bb0-9d40-a085edc569b6
+    TargetNodeGuid: 1728faab-2bce-4a09-80f2-ce7818469fb0
   - BaseNodeGuid: b892ba9d-0148-4bd5-afed-61ecac851a79
     PortName: Pass
-    PortGUID: ce82bdb3-b4f7-476a-bd78-d515bd361c29
+    PortGUID: 78a840cf-1121-4acf-8eab-49e797060683
     Condition: 
     TargetNodeGuid: daeeeda0-a541-4f99-8a80-61fd47abfee2
-  - BaseNodeGuid: daeeeda0-a541-4f99-8a80-61fd47abfee2
-    PortName: Next
-    PortGUID: 585cd413-1aba-407d-a9c0-f8a5f43ac190
-    Condition: 
-    TargetNodeGuid: cf9d2175-e466-4e02-b2e0-da84a39e762b
   - BaseNodeGuid: 1728faab-2bce-4a09-80f2-ce7818469fb0
     PortName: Pass
-    PortGUID: f49272fb-dc6f-4ad8-9e90-3ebe25d426cc
+    PortGUID: d5819703-1578-4e65-a0d2-ed08f3bcde1d
     Condition: 
     TargetNodeGuid: b256f0a9-f32f-4a31-ae94-715af27aea8a
   - BaseNodeGuid: 1728faab-2bce-4a09-80f2-ce7818469fb0
     PortName: Fail
-    PortGUID: 51aabc00-b5ec-4152-bef4-6a3a142ef0cf
+    PortGUID: 830f7afa-66e3-47f5-8a16-f55c2ed7485e
     Condition: 
     TargetNodeGuid: 89e528fa-009c-4f53-a639-7e455380e8c5
+  - BaseNodeGuid: b0a84eb7-5c41-459b-b24f-75d1dce59311
+    PortName: Fail
+    PortGUID: bae0e3b8-58bd-4d4e-9e9f-f45c791c1b28
+    Condition: 
+    TargetNodeGuid: b892ba9d-0148-4bd5-afed-61ecac851a79
+  - BaseNodeGuid: b0a84eb7-5c41-459b-b24f-75d1dce59311
+    PortName: Pass
+    PortGUID: 2ebc84e7-9966-40bc-aa1d-857c778e13d3
+    Condition: 
+    TargetNodeGuid: 69a9fee2-e4a7-4bb0-9d40-a085edc569b6
+  - BaseNodeGuid: daeeeda0-a541-4f99-8a80-61fd47abfee2
+    PortName: Next
+    PortGUID: 8c1b0705-505e-4848-9128-9a27e00c56a7
+    Condition: 
+    TargetNodeGuid: cf9d2175-e466-4e02-b2e0-da84a39e762b
+  - BaseNodeGuid: eff884da-e6c0-4f36-8ff9-0659a6614d18
+    PortName: Next
+    PortGUID: 9267fb99-6a8b-4db9-ac93-3a17bb8f8e76
+    Condition: 
+    TargetNodeGuid: 4901e5cf-087e-42c1-873f-8e9c585bcb2f
   Nodes:
   - Guid: 647a4bcf-abf4-4d47-82e8-2d27f1025626
     Position: {x: 115, y: -185}
@@ -155,3 +160,10 @@ MonoBehaviour:
     _textValues:
     - This makes me need to poop.
     - Goku
+  - Guid: 4901e5cf-087e-42c1-873f-8e9c585bcb2f
+    Position: {x: -103, y: 172}
+    Type: 64
+    _textKeys:
+    - Code
+    _textValues:
+    - r = UnityEngine.Random.Range(1,5);

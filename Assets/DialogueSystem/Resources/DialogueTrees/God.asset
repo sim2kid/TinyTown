@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d22888574f9e9fa4fa361e996cfea431, type: 3}
+  m_Name: God
+  m_EditorClassIdentifier: 
+  DialogueName: God
+  EntryPointGUID: e5c000c7-4e31-4bad-9e3e-20d32f77035f
+  NodeLinks:
+  - BaseNodeGuid: e5c000c7-4e31-4bad-9e3e-20d32f77035f
+    PortName: Next
+    PortGUID: c7e2a801-9404-45e3-8233-57ecb2cf38dc
+    Condition: 
+    TargetNodeGuid: 0a7f7cd4-56c0-4708-b208-144c4ad7a893
+  - BaseNodeGuid: 0a7f7cd4-56c0-4708-b208-144c4ad7a893
+    PortName: Stay Here
+    PortGUID: cc773266-03f7-4f5b-ae9e-8df6c014d18f
+    Condition: 
+    TargetNodeGuid: f2986854-fd9b-4178-97bb-5c6ffd559e42
+  - BaseNodeGuid: 0a7f7cd4-56c0-4708-b208-144c4ad7a893
+    PortName: Restart The World
+    PortGUID: 9d6a0b60-54b9-483d-8017-489af309f5e2
+    Condition: 
+    TargetNodeGuid: d07f4d91-c8e1-463a-ab77-92c643a39ef0
+  - BaseNodeGuid: d07f4d91-c8e1-463a-ab77-92c643a39ef0
+    PortName: Next
+    PortGUID: f9ccdef3-51bf-4f86-a7d2-1c5b5bcf2535
+    Condition: 
+    TargetNodeGuid: f304de48-825d-4b85-b8cc-cd2b68840934
+  Nodes:
+  - Guid: f2986854-fd9b-4178-97bb-5c6ffd559e42
+    Position: {x: 775, y: 215}
+    Type: 8
+    _textKeys:
+    - DialogueText
+    - CharacterName
+    _textValues:
+    - The world shall stay.
+    - God
+  - Guid: 0a7f7cd4-56c0-4708-b208-144c4ad7a893
+    Position: {x: 303, y: -9}
+    Type: 4
+    _textKeys:
+    - DialogueText
+    - CharacterName
+    _textValues:
+    - Hello there. Would you like to reset the world?
+    - God
+  - Guid: d07f4d91-c8e1-463a-ab77-92c643a39ef0
+    Position: {x: 755, y: -120}
+    Type: 8
+    _textKeys:
+    - DialogueText
+    - CharacterName
+    _textValues:
+    - I will see you in the next world.
+    - God
+  - Guid: f304de48-825d-4b85-b8cc-cd2b68840934
+    Position: {x: 1086, y: -68}
+    Type: 64
+    _textKeys:
+    - Code
+    _textValues:
+    - UnityEngine.SceneManagement.SceneManager.LoadScene(0);

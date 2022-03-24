@@ -18,8 +18,8 @@ namespace DialogueSystem.Code
 
         // Variables //
         // Variable(s) From Node: 569403a5-3f87-43b2-8541-7f318f7a9866 //
-StageType before = StageType.PetersonQuestPoopBegin & StageType.PoopPile &
-StageType.PetersonQuestPoopEndPetBegin & StageType.ReturnPet;
+int before = (int)StageType.PetersonQuestPoopBegin + (int)StageType.PoopPile +
+(int)StageType.PetersonQuestPoopEndPetBegin + (int)StageType.ReturnPet;
 int poopLeft => Stage.Instance.poopPileTwo;
 
 
@@ -39,6 +39,7 @@ int poopLeft => Stage.Instance.poopPileTwo;
             dialogueChecks.Add("Niko_258dce24f59647ca9fe8b36e02359ef8_f0a415446a4249d8b5c2f1aedf44aa47",Niko_258dce24f59647ca9fe8b36e02359ef8_f0a415446a4249d8b5c2f1aedf44aa47);
             dialogueChecks.Add("Niko_c976a6e9aacb4668bdabfc7fe431b013_5d75a07d432f46a1bed3ba2a79a6e720",Niko_c976a6e9aacb4668bdabfc7fe431b013_5d75a07d432f46a1bed3ba2a79a6e720);
             eventFunctions.Add("Niko_e259fb9e364e49a4913d0124342225f8",Niko_e259fb9e364e49a4913d0124342225f8);
+            eventFunctions.Add("Niko_83fa1aa442e949ba88ccd0e356f3c1cc",Niko_83fa1aa442e949ba88ccd0e356f3c1cc);
 
         }
 
@@ -114,6 +115,10 @@ int poopLeft => Stage.Instance.poopPileTwo;
         // Event From Node: e259fb9e-364e-49a4-913d-0124342225f8 //
         public void Niko_e259fb9e364e49a4913d0124342225f8() {
 Stage.Instance.CurrentStage = StageType.NikoPoopCollection;
+        }
+        // Event From Node: 83fa1aa4-42e9-49ba-88cc-d0e356f3c1cc //
+        public void Niko_83fa1aa442e949ba88ccd0e356f3c1cc() {
+Stage.Instance.CurrentStage = StageType.GameOver;
         }
 
     }

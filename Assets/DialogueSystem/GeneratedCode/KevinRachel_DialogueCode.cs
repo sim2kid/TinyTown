@@ -18,13 +18,14 @@ namespace DialogueSystem.Code
 
         // Variables //
         // Variable(s) From Node: a584eb34-dc67-4c39-aba2-478ba4756614 //
-int r = UnityEngine.Random.Range(0,10);
+int r = UnityEngine.Random.Range(0,2);
 
 
         public void Start()
         {
             // Setup //
             conditionChecks.Add("KevinRachel_766d4f7949794856996a8ed6ec13fd1c",KevinRachel_766d4f7949794856996a8ed6ec13fd1c);
+            eventFunctions.Add("KevinRachel_c79f4ccdbc3445f4ba6ba6ecb6a0692e",KevinRachel_c79f4ccdbc3445f4ba6ba6ecb6a0692e);
 
         }
 
@@ -39,6 +40,10 @@ int r = UnityEngine.Random.Range(0,10);
 
 
         // Event Functions //
+        // Event From Node: c79f4ccd-bc34-45f4-ba6b-a6ecb6a0692e //
+        public void KevinRachel_c79f4ccdbc3445f4ba6ba6ecb6a0692e() {
+r = UnityEngine.Random.Range(0,2);
+        }
 
     }
 }

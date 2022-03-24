@@ -7,27 +7,25 @@ public class Follow : IState
     public IState NextState { get; private set; } = null;
 
     private CreatureController creature;
-    private Transform player;
+    private Vector3 player => Player.PlayerController.current.transform.position;
 
     public Follow(CreatureController creature)
     {
         this.creature = creature;
-        player = Player.PlayerController.current.transform;
     }
 
     public void Begin()
     {
-        creature.agent.SetDestination(player.position);
+        creature.agent.SetDestination(player);
         creature.agent.isStopped = false;
         Console.Log("Now Follow");
     }
-
     
 
     public void Update()
     {
-        float playerDis = Vector3.Distance(creature.transform.position, player.position);
-        if (playerDis < 1f)
+        float playerDis = Vector3.Distance(creature.transform.position, player);
+        if (playerDis < 3f)
         {
             creature.agent.isStopped = true;
 
@@ -39,6 +37,7 @@ public class Follow : IState
         }
         else 
         {
+            creature.agent.SetDestination(player);
             creature.agent.isStopped = false;
         }
     }
