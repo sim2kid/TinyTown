@@ -18,7 +18,7 @@ namespace DialogueSystem.Code
 
         // Variables //
         // Variable(s) From Node: a584eb34-dc67-4c39-aba2-478ba4756614 //
-int r = UnityEngine.Random.Range(0,10);
+StageType stage => Stage.Instance.CurrentStage;
 
 
         public void Start()
@@ -34,7 +34,7 @@ int r = UnityEngine.Random.Range(0,10);
         // Condition Checks //
         // Condition From Node: 766d4f79-4979-4856-996a-8ed6ec13fd1c //
         public bool KevinRachel_766d4f7949794856996a8ed6ec13fd1c() {
-            return (r % 2 == 0);
+            return (Stage.ContainsStage(StageType.PetersonQuestPoopBegin));
         }
 
 

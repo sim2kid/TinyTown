@@ -17,6 +17,25 @@ public class Stage
         }
     }
 
+    public int poopPileOne = 14;
+    public int poopPileTwo = 31;
+    public void PickUpPileOne() 
+    {
+        poopPileOne--;
+        if (poopPileOne == 0) 
+        {
+            CurrentStage = StageType.PetersonQuestPoopEndPetBegin;
+        }
+    }
+    public void PickUpPileTwo()
+    {
+        poopPileTwo--;
+        if (poopPileTwo == 0) 
+        {
+            CurrentStage = StageType.NikoPoopEnd;
+        }
+    }
+
     public StageType CurrentStage;
 
     public Stage() 
