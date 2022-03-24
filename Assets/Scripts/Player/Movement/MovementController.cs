@@ -25,6 +25,8 @@ namespace Player.Movement
         LayerMask interactionMask = 0;
         public LayerMask LayerMask { get => interactionMask; }
 
+        public bool isEnabled = true;
+
         CharacterController characterController;
         Vector2 moveValue;
         Vector3 moveTo;
@@ -83,6 +85,8 @@ namespace Player.Movement
 
         void FixedUpdate()
         {
+            if (!isEnabled)
+                return;
             HandleGravity();
             HandleMovement();
             _onGround = IsOnGround;
