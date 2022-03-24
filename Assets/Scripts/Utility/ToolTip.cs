@@ -24,6 +24,8 @@ namespace Utility
         [HideInInspector]
         public string HoldText;
 
+        public bool isEnabled = true;
+
         private void Awake()
         {
             Instance = this;
@@ -43,6 +45,16 @@ namespace Utility
 
         void Update()
         {
+            if (!isEnabled)
+            {
+                if (Hover != null)
+                    Hover.text = string.Empty;
+                if (Use != null)
+                    Use.text = string.Empty;
+                if (Hold != null)
+                    Hold.text = string.Empty;
+                return;
+            }
             if(Hover != null)
                 Hover.text = ToolTipIcons.ResolveString(HoverText);
             if (Use != null)

@@ -24,6 +24,7 @@ namespace Player.Movement
         [Tooltip("The thing that will turn vertically (The game camera)")]
         [SerializeField] 
         public new GameObject camera;
+        public bool isEnabled = true;
 
         
         public UnityEvent OnJolt;
@@ -65,7 +66,8 @@ namespace Player.Movement
 
         private void Update()
         {
-            MouseLook();
+            if(isEnabled)
+                MouseLook();
         }
 
         private void MouseLook()

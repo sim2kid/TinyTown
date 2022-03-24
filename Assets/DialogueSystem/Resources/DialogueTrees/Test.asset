@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d22888574f9e9fa4fa361e996cfea431, type: 3}
+  m_Name: Test
+  m_EditorClassIdentifier: 
+  DialogueName: Test
+  EntryPointGUID: 4891ca54-938d-4ab8-8fb3-a376326565e3
+  NodeLinks:
+  - BaseNodeGuid: 4891ca54-938d-4ab8-8fb3-a376326565e3
+    PortName: Next
+    PortGUID: f44f19e5-9aba-4b3b-9b1b-55f4bea84498
+    Condition: 
+    TargetNodeGuid: 2855a85a-5209-4e96-8682-2fa99d987dac
+  - BaseNodeGuid: 2855a85a-5209-4e96-8682-2fa99d987dac
+    PortName: Hello There Cube
+    PortGUID: 67e8022c-3d87-4c23-8ede-094e0dc01970
+    Condition: 
+    TargetNodeGuid: df6ba1be-e7bf-400f-8bfc-1ec7fe332431
+  - BaseNodeGuid: df6ba1be-e7bf-400f-8bfc-1ec7fe332431
+    PortName: Next
+    PortGUID: 3af4eac7-31b6-4240-8310-c7570a873836
+    Condition: 
+    TargetNodeGuid: 99fced48-33d2-4159-8940-d5c48ea70a0f
+  Nodes:
+  - Guid: 2855a85a-5209-4e96-8682-2fa99d987dac
+    Position: {x: 285, y: 37}
+    Type: 4
+    _textKeys:
+    - DialogueText
+    - CharacterName
+    _textValues:
+    - I AM A CUBE
+    - Cube
+  - Guid: df6ba1be-e7bf-400f-8bfc-1ec7fe332431
+    Position: {x: 609, y: 189}
+    Type: 8
+    _textKeys:
+    - DialogueText
+    - CharacterName
+    _textValues:
+    - THE CUBE DISLIKES YOU
+    - Cube
+  - Guid: 99fced48-33d2-4159-8940-d5c48ea70a0f
+    Position: {x: 922, y: 266}
+    Type: 8
+    _textKeys:
+    - DialogueText
+    - CharacterName
+    _textValues:
+    - THE CUBE WANTS TO DIE
+    - Cube

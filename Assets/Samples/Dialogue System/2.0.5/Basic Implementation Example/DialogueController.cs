@@ -4,6 +4,7 @@ using UnityEngine;
 using DialogueSystem;
 using TMPro;
 using System.Linq;
+using UnityEngine.Events;
 
 namespace DialogueSystem.Demo
 {
@@ -25,6 +26,9 @@ namespace DialogueSystem.Demo
 
         List<string> optionGuids;
 
+        public bool InConvo { get; private set; } = false;
+        public UnityEvent OnConvoStart;
+        public UnityEvent OnConvoEnd;
 
         void Start()
         {
@@ -67,6 +71,9 @@ namespace DialogueSystem.Demo
             if (manager != null)
             {
                 dialogueParent.SetActive(true);
+                Utility.Pause.Instance.SetPause(true);
+                InConvo = true;
+                OnConvoStart.Invoke();
                 RenderCurrentNode();
             }
         }
@@ -74,6 +81,9 @@ namespace DialogueSystem.Demo
         public void EndConversation()
         {
             dialogueParent.SetActive(false);
+            Utility.Pause.Instance.SetPause(false);
+            OnConvoEnd.Invoke();
+            InConvo = false;
         }
 
         public void Next(int optionChoice = -1)
