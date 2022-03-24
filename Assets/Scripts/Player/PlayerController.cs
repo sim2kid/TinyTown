@@ -7,12 +7,18 @@ using UnityEngine.InputSystem;
 namespace Player {
     public class PlayerController : MonoBehaviour
     {
+        public static PlayerController current { get; private set; }
+
         public MovementController movement;
         public HeadMovement headMovement;
 
         private InputAction pause;
         private DialogueSystem.Demo.DialogueController dc;
 
+        private void Awake()
+        {
+            current = this;
+        }
 
         void Start()
         {

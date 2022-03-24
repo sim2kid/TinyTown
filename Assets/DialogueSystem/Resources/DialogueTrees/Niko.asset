@@ -1,0 +1,464 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d22888574f9e9fa4fa361e996cfea431, type: 3}
+  m_Name: Niko
+  m_EditorClassIdentifier: 
+  DialogueName: Niko
+  EntryPointGUID: b59b5f6e-09de-46f9-b315-c5a26765099e
+  NodeLinks:
+  - BaseNodeGuid: b59b5f6e-09de-46f9-b315-c5a26765099e
+    PortName: Next
+    PortGUID: affdd81a-957d-435e-8e48-b6546528c8c3
+    Condition: 
+    TargetNodeGuid: af91f758-3312-43ac-bc9f-cca874bf0823
+  - BaseNodeGuid: af91f758-3312-43ac-bc9f-cca874bf0823
+    PortName: Fail
+    PortGUID: de7ae24b-2275-4713-a096-29ad19967fc1
+    Condition: 
+    TargetNodeGuid: 62e6d247-e3f0-4fb9-bd8c-0e2d5d25be5b
+  - BaseNodeGuid: af91f758-3312-43ac-bc9f-cca874bf0823
+    PortName: Pass
+    PortGUID: f3d44180-3aa6-46d9-b70b-0bbd5df07525
+    Condition: 
+    TargetNodeGuid: 7371372a-2785-46bc-a9c9-f3f942ea17f6
+  - BaseNodeGuid: 7371372a-2785-46bc-a9c9-f3f942ea17f6
+    PortName: Next
+    PortGUID: 1f56e487-d6a8-400d-ac4b-3c194257133b
+    Condition: 
+    TargetNodeGuid: 3f38fa97-d574-4b3e-8308-86986b21fe3f
+  - BaseNodeGuid: 955e124c-fd0a-4a11-be81-09c12cb545ff
+    PortName: Um.. Niko?
+    PortGUID: 91193f27-f53f-431b-a560-c125d8070295
+    Condition: 
+    TargetNodeGuid: d679bf7f-553b-4efd-a564-d1ac7bd60e49
+  - BaseNodeGuid: d679bf7f-553b-4efd-a564-d1ac7bd60e49
+    PortName: Ms Peterson told me to bring this little guy to you.
+    PortGUID: 3c0445a8-f0c5-4427-80f4-bff6ae4f2cb6
+    Condition: 
+    TargetNodeGuid: 95555006-1aea-48f1-9aac-7dccaf20fed2
+  - BaseNodeGuid: 5d3a2ae9-55ae-4ec7-9931-d7752d5e9f6d
+    PortName: Next
+    PortGUID: b6acc627-f991-4857-9c8a-ddf029a8c4af
+    Condition: 
+    TargetNodeGuid: 862f1a1f-f686-43c7-aa72-322681a1aa87
+  - BaseNodeGuid: 95555006-1aea-48f1-9aac-7dccaf20fed2
+    PortName: Next
+    PortGUID: 89fec4d5-7364-4453-b992-4d752a7fc0ec
+    Condition: 
+    TargetNodeGuid: 5d3a2ae9-55ae-4ec7-9931-d7752d5e9f6d
+  - BaseNodeGuid: 862f1a1f-f686-43c7-aa72-322681a1aa87
+    PortName: Next
+    PortGUID: 39dc9ce1-4e02-4b06-95dc-971ace37ea34
+    Condition: 
+    TargetNodeGuid: efb80f3f-5448-4b69-a25e-97186ffea945
+  - BaseNodeGuid: efb80f3f-5448-4b69-a25e-97186ffea945
+    PortName: Sure thing!
+    PortGUID: 7de729c2-52d4-4833-b1f4-34656b5fbb4d
+    Condition: 
+    TargetNodeGuid: c06073c1-2e29-4634-9447-82ba6808a144
+  - BaseNodeGuid: efb80f3f-5448-4b69-a25e-97186ffea945
+    PortName: No Way!
+    PortGUID: fd2e4838-11fc-4029-a2a8-46df5482a88a
+    Condition: 
+    TargetNodeGuid: 70d5e3e9-c87f-44f4-a0eb-c033f48b4481
+  - BaseNodeGuid: c06073c1-2e29-4634-9447-82ba6808a144
+    PortName: Next
+    PortGUID: 7832eac4-55f9-420d-af19-86e2f6da2460
+    Condition: 
+    TargetNodeGuid: 258dce24-f596-47ca-9fe8-b36e02359ef8
+  - BaseNodeGuid: 70d5e3e9-c87f-44f4-a0eb-c033f48b4481
+    PortName: Next
+    PortGUID: 60ce03db-7055-47a6-9080-5b2dc2a5cf32
+    Condition: 
+    TargetNodeGuid: 4c1ccefb-151b-483e-b94a-51b928e6b04e
+  - BaseNodeGuid: 4c1ccefb-151b-483e-b94a-51b928e6b04e
+    PortName: Next
+    PortGUID: 906077f1-d2cc-4701-b1a5-d2ef79f7797c
+    Condition: 
+    TargetNodeGuid: 06f7c4e1-b97b-4fb9-a287-2038a17d5a15
+  - BaseNodeGuid: 06f7c4e1-b97b-4fb9-a287-2038a17d5a15
+    PortName: Next
+    PortGUID: 53cc54a6-35c6-4cea-8200-27fc10010c83
+    Condition: 
+    TargetNodeGuid: 4380c92a-4980-4a62-80c3-ded7ac846f98
+  - BaseNodeGuid: 4380c92a-4980-4a62-80c3-ded7ac846f98
+    PortName: Next
+    PortGUID: 031113e5-f227-4cc7-8d33-045236789c0c
+    Condition: 
+    TargetNodeGuid: bd48e296-4777-41b9-bd5f-9ecbe39634c8
+  - BaseNodeGuid: bd48e296-4777-41b9-bd5f-9ecbe39634c8
+    PortName: Next
+    PortGUID: 8ee7c1d7-d656-4e38-8b91-3a1a8318ceb8
+    Condition: 
+    TargetNodeGuid: 575cc3dd-8115-46b3-a03f-434516e5fb69
+  - BaseNodeGuid: 575cc3dd-8115-46b3-a03f-434516e5fb69
+    PortName: Next
+    PortGUID: fcc5767c-baf1-4171-811f-08ec61c82d02
+    Condition: 
+    TargetNodeGuid: 258dce24-f596-47ca-9fe8-b36e02359ef8
+  - BaseNodeGuid: 258dce24-f596-47ca-9fe8-b36e02359ef8
+    PortName: Yeah, what is it?
+    PortGUID: f0a41544-6a42-49d8-b5c2-f1aedf44aa47
+    Condition: 
+    TargetNodeGuid: 674a0ae4-107a-46c9-b943-2935a1374ed5
+  - BaseNodeGuid: 674a0ae4-107a-46c9-b943-2935a1374ed5
+    PortName: Next
+    PortGUID: 88159d1d-1ea1-4863-90b7-c5c390a45822
+    Condition: 
+    TargetNodeGuid: c976a6e9-aacb-4668-bdab-fc7fe431b013
+  - BaseNodeGuid: c976a6e9-aacb-4668-bdab-fc7fe431b013
+    PortName: I'm on it!
+    PortGUID: 5d75a07d-432f-46a1-bed3-ba2a79a6e720
+    Condition: 
+    TargetNodeGuid: ab911b9f-ef21-49bf-8568-179079b1b479
+  - BaseNodeGuid: e6f67504-b233-489c-90ed-532e8f24e479
+    PortName: Is this enough?
+    PortGUID: 40131c37-86ca-41db-871b-69abd90f0c4d
+    Condition: 
+    TargetNodeGuid: d2456d81-62a3-432f-9d52-83db42d714f8
+  - BaseNodeGuid: d2456d81-62a3-432f-9d52-83db42d714f8
+    PortName: Pass
+    PortGUID: 7955b6eb-3a6f-4824-b89d-f2d6448240e1
+    Condition: 
+    TargetNodeGuid: c942b4af-b916-4a74-b3e6-d9593e6ea601
+  - BaseNodeGuid: d2456d81-62a3-432f-9d52-83db42d714f8
+    PortName: Fail
+    PortGUID: c604210e-3078-4be2-a7b5-7537f7f802db
+    Condition: 
+    TargetNodeGuid: 658ef4d5-61ec-499e-bb32-b7a17adcb1c8
+  - BaseNodeGuid: 658ef4d5-61ec-499e-bb32-b7a17adcb1c8
+    PortName: Next
+    PortGUID: 77765b77-0e29-449f-83c5-864bd4d15807
+    Condition: 
+    TargetNodeGuid: 6ba6ba23-4934-4b7f-90bc-0a342ee24ebf
+  - BaseNodeGuid: 6ba6ba23-4934-4b7f-90bc-0a342ee24ebf
+    PortName: Next
+    PortGUID: c1249b6e-a38f-4e0a-ac6f-c93d3c333498
+    Condition: 
+    TargetNodeGuid: 62e96799-106c-416e-9884-b1447e681327
+  - BaseNodeGuid: 62e6d247-e3f0-4fb9-bd8c-0e2d5d25be5b
+    PortName: Fail
+    PortGUID: e99cb6ee-41c8-43f0-9078-c11ddac73b4a
+    Condition: 
+    TargetNodeGuid: 34f47f3f-bc5b-416f-8c47-6c32191dcd75
+  - BaseNodeGuid: 62e6d247-e3f0-4fb9-bd8c-0e2d5d25be5b
+    PortName: Pass
+    PortGUID: 90d39c81-ad7f-409a-818e-956ab1f77133
+    Condition: 
+    TargetNodeGuid: 955e124c-fd0a-4a11-be81-09c12cb545ff
+  - BaseNodeGuid: 34f47f3f-bc5b-416f-8c47-6c32191dcd75
+    PortName: Fail
+    PortGUID: 0621d6c4-c078-4638-89f9-ae0040bb738f
+    Condition: 
+    TargetNodeGuid: 1c9fbce3-ea57-49a1-8956-99e632175cdf
+  - BaseNodeGuid: 34f47f3f-bc5b-416f-8c47-6c32191dcd75
+    PortName: Pass
+    PortGUID: 82845116-67d3-4f06-95f9-0f326183e268
+    Condition: 
+    TargetNodeGuid: e6f67504-b233-489c-90ed-532e8f24e479
+  - BaseNodeGuid: 1c9fbce3-ea57-49a1-8956-99e632175cdf
+    PortName: Fail
+    PortGUID: f4621d85-bf1a-4914-99e5-56bca88b9c0e
+    Condition: 
+    TargetNodeGuid: 916bc39d-0d12-4eaa-9088-e564e07e1fde
+  - BaseNodeGuid: 1c9fbce3-ea57-49a1-8956-99e632175cdf
+    PortName: Pass
+    PortGUID: da1e09bd-f7ab-4ff1-8560-9fd7d86e47e9
+    Condition: 
+    TargetNodeGuid: e6f67504-b233-489c-90ed-532e8f24e479
+  - BaseNodeGuid: 258dce24-f596-47ca-9fe8-b36e02359ef8
+    PortName: Yeah, what is it?
+    PortGUID: f0a41544-6a42-49d8-b5c2-f1aedf44aa47
+    Condition: 
+    TargetNodeGuid: e259fb9e-364e-49a4-913d-0124342225f8
+  Nodes:
+  - Guid: af91f758-3312-43ac-bc9f-cca874bf0823
+    Position: {x: 364, y: -18}
+    Type: 32
+    _textKeys:
+    - Condition
+    _textValues:
+    - Stage.ContainsStage(before)
+  - Guid: 916bc39d-0d12-4eaa-9088-e564e07e1fde
+    Position: {x: -2, y: 588}
+    Type: 8
+    _textKeys:
+    - DialogueText
+    - CharacterName
+    _textValues:
+    - Thanks for all your help today. I've got nothing else for you to do. Maybe
+      come back tomorrow?
+    - Niko
+  - Guid: 3f38fa97-d574-4b3e-8308-86986b21fe3f
+    Position: {x: 817, y: -196}
+    Type: 8
+    _textKeys:
+    - DialogueText
+    _textValues:
+    - She looks busy. I'll come back later...
+  - Guid: 7371372a-2785-46bc-a9c9-f3f942ea17f6
+    Position: {x: 600, y: -196}
+    Type: 8
+    _textKeys:
+    - DialogueText
+    - CharacterName
+    _textValues:
+    - Hmm... Do do do dooo...
+    - Niko
+  - Guid: 955e124c-fd0a-4a11-be81-09c12cb545ff
+    Position: {x: 567, y: 49}
+    Type: 4
+    _textKeys:
+    - DialogueText
+    - CharacterName
+    _textValues:
+    - Do do doo...
+    - Niko
+  - Guid: d679bf7f-553b-4efd-a564-d1ac7bd60e49
+    Position: {x: 817, y: 49}
+    Type: 4
+    _textKeys:
+    - DialogueText
+    - CharacterName
+    _textValues:
+    - Uh, yes?
+    - Niko
+  - Guid: 5d3a2ae9-55ae-4ec7-9931-d7752d5e9f6d
+    Position: {x: 1254, y: 82}
+    Type: 8
+    _textKeys:
+    - DialogueText
+    - CharacterName
+    _textValues:
+    - I've been looking for one of these guys for ages!
+    - Niko
+  - Guid: 95555006-1aea-48f1-9aac-7dccaf20fed2
+    Position: {x: 1254, y: -147}
+    Type: 8
+    _textKeys:
+    - DialogueText
+    - CharacterName
+    _textValues:
+    - OH MY GAWD IS THAT A POOPDEER!?!?!?
+    - Niko
+  - Guid: 862f1a1f-f686-43c7-aa72-322681a1aa87
+    Position: {x: 1567, y: -147}
+    Type: 8
+    _textKeys:
+    - DialogueText
+    - CharacterName
+    _textValues:
+    - They're so good for growing plants! all of our food here is grown with their
+      poop!
+    - Niko
+  - Guid: efb80f3f-5448-4b69-a25e-97186ffea945
+    Position: {x: 1586, y: 82}
+    Type: 4
+    _textKeys:
+    - DialogueText
+    - CharacterName
+    _textValues:
+    - Would it be okay if I took him from you?
+    - Niko
+  - Guid: c06073c1-2e29-4634-9447-82ba6808a144
+    Position: {x: 1859, y: 326}
+    Type: 8
+    _textKeys:
+    - DialogueText
+    - CharacterName
+    _textValues:
+    - Aw really? Fine I guess...
+    - Niko
+  - Guid: 70d5e3e9-c87f-44f4-a0eb-c033f48b4481
+    Position: {x: 1872, y: 82}
+    Type: 8
+    _textKeys:
+    - DialogueText
+    - CharacterName
+    _textValues:
+    - REALLY?!
+    - Niko
+  - Guid: 4c1ccefb-151b-483e-b94a-51b928e6b04e
+    Position: {x: 2057, y: -92}
+    Type: 8
+    _textKeys:
+    - DialogueText
+    - CharacterName
+    _textValues:
+    - Alright! Come here little guy!
+    - Niko
+  - Guid: 06f7c4e1-b97b-4fb9-a287-2038a17d5a15
+    Position: {x: 2073, y: 130}
+    Type: 8
+    _textKeys:
+    - DialogueText
+    - CharacterName
+    _textValues:
+    - ...
+    - Poopdeer
+  - Guid: 4380c92a-4980-4a62-80c3-ded7ac846f98
+    Position: {x: 2266, y: -82}
+    Type: 8
+    _textKeys:
+    - DialogueText
+    - CharacterName
+    _textValues:
+    - ...Little Guy?
+    - Niko
+  - Guid: bd48e296-4777-41b9-bd5f-9ecbe39634c8
+    Position: {x: 2275, y: 143}
+    Type: 8
+    _textKeys:
+    - DialogueText
+    - CharacterName
+    _textValues:
+    - I guess he's grown attached to you...
+    - Niko
+  - Guid: 575cc3dd-8115-46b3-a03f-434516e5fb69
+    Position: {x: 2525, y: 32}
+    Type: 8
+    _textKeys:
+    - DialogueText
+    - CharacterName
+    _textValues:
+    - What a shame. He can stick with you then...
+    - Niko
+  - Guid: 569403a5-3f87-43b2-8541-7f318f7a9866
+    Position: {x: -65, y: -278}
+    Type: 16
+    _textKeys:
+    - Code
+    _textValues:
+    - 'StageType before = StageType.PetersonQuestPoopBegin & StageType.PoopPile &
+
+      StageType.PetersonQuestPoopEndPetBegin
+      & StageType.ReturnPet;
+
+      int poopLeft => Stage.Instance.poopPileTwo;'
+  - Guid: e6f67504-b233-489c-90ed-532e8f24e479
+    Position: {x: 590, y: 326}
+    Type: 4
+    _textKeys:
+    - DialogueText
+    - CharacterName
+    _textValues:
+    - How goes the poop collection?
+    - Niko
+  - Guid: d2456d81-62a3-432f-9d52-83db42d714f8
+    Position: {x: 848, y: 368}
+    Type: 32
+    _textKeys:
+    - Condition
+    _textValues:
+    - poopLeft > 0
+  - Guid: c942b4af-b916-4a74-b3e6-d9593e6ea601
+    Position: {x: 1099, y: 300}
+    Type: 8
+    _textKeys:
+    - DialogueText
+    - CharacterName
+    _textValues:
+    - Hmm... I think I'll need about {poopLeft} more. Grab me a few more, okay?
+    - Niko
+  - Guid: 658ef4d5-61ec-499e-bb32-b7a17adcb1c8
+    Position: {x: 1084, y: 535}
+    Type: 8
+    _textKeys:
+    - DialogueText
+    - CharacterName
+    _textValues:
+    - One, two, three... That looks like enough! Thank you so much for your help!
+    - Niko
+  - Guid: 6ba6ba23-4934-4b7f-90bc-0a342ee24ebf
+    Position: {x: 1024, y: 763}
+    Type: 8
+    _textKeys:
+    - DialogueText
+    - CharacterName
+    _textValues:
+    - This poop is some really good stuff. I don't know how people used to survive
+      without it!
+    - Niko
+  - Guid: 62e96799-106c-416e-9884-b1447e681327
+    Position: {x: 1656, y: 633}
+    Type: 8
+    _textKeys:
+    - DialogueText
+    - CharacterName
+    _textValues:
+    - I best get back to work before the sun goes down. Thanks for your help once
+      again!
+    - Niko
+  - Guid: 62e6d247-e3f0-4fb9-bd8c-0e2d5d25be5b
+    Position: {x: 130, y: 130}
+    Type: 32
+    _textKeys:
+    - Condition
+    _textValues:
+    - Stage.ContainsStage(StageType.PetersonQuestPetEndFindNikoBegin)
+  - Guid: 34f47f3f-bc5b-416f-8c47-6c32191dcd75
+    Position: {x: 223, y: 278}
+    Type: 32
+    _textKeys:
+    - Condition
+    _textValues:
+    - Stage.ContainsStage(StageType.NikoPoopCollection)
+  - Guid: 1c9fbce3-ea57-49a1-8956-99e632175cdf
+    Position: {x: 259, y: 440}
+    Type: 32
+    _textKeys:
+    - Condition
+    _textValues:
+    - Stage.ContainsStage(StageType.NikoPoopEnd)
+  - Guid: 258dce24-f596-47ca-9fe8-b36e02359ef8
+    Position: {x: 2821, y: 193}
+    Type: 4
+    _textKeys:
+    - DialogueText
+    - CharacterName
+    _textValues:
+    - Well, in the case, can you do me a favor?
+    - Niko
+  - Guid: 674a0ae4-107a-46c9-b943-2935a1374ed5
+    Position: {x: 3092, y: -53}
+    Type: 8
+    _textKeys:
+    - DialogueText
+    - CharacterName
+    _textValues:
+    - Since the Poopdeer is sticking with you, I need more poop for the garden.
+    - Niko
+  - Guid: c976a6e9-aacb-4668-bdab-fc7fe431b013
+    Position: {x: 3129, y: 193}
+    Type: 4
+    _textKeys:
+    - DialogueText
+    - CharacterName
+    _textValues:
+    - I'll need about {poopLeft} more. Can you go get some for me?
+    - Niko
+  - Guid: ab911b9f-ef21-49bf-8568-179079b1b479
+    Position: {x: 3557, y: 132}
+    Type: 8
+    _textKeys:
+    - DialogueText
+    - CharacterName
+    _textValues:
+    - Thank you so much for your help! I'll wait for you here!
+    - Niko
+  - Guid: e259fb9e-364e-49a4-913d-0124342225f8
+    Position: {x: 2880, y: -271}
+    Type: 64
+    _textKeys:
+    - Code
+    _textValues:
+    - Stage.Instance.CurrentStage = StageType.NikoPoopCollection;

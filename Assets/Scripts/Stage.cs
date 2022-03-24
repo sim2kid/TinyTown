@@ -58,5 +58,6 @@ public enum StageType
     ReturnPet = 1 << 3,
     PetersonQuestPetEndFindNikoBegin = 1 << 4,
     NikoPoopCollection = 1 << 5,
-    NikoPoopEnd = 1 << 6
+    NikoPoopEnd = 1 << 6,
+    GameOver = 1 << 7,
 }
