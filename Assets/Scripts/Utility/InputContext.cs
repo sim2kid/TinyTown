@@ -156,6 +156,10 @@ namespace Utility.Input {
         /// <returns></returns>
         public static Scheme ResolveScheme(string scheme) 
         {
+            if (scheme == null)
+            { 
+                scheme = string.Empty;
+            }
             switch (scheme.ToLower())
             {
                 case "mouse":
